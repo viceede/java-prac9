@@ -35,7 +35,7 @@ public class ArrayGenericStack<E> {
     public E pop() {
         if (isEmpty()) return null;
         E o = array[--size];
-        array[size] = null; // для сборщика мусора
+        array[size] = null;
         return o;
     }
 
